@@ -14,8 +14,6 @@ class MealItem extends StatelessWidget {
   final Meal meal;
   final void Function(Meal meal) onSelectMeal;
 
-  
-
   String get complexityText {
     return meal.complexity.name[0].toUpperCase() +
         meal.complexity.name.substring(1);
@@ -41,24 +39,12 @@ class MealItem extends StatelessWidget {
         },
         child: Stack(
           children: [
-           // FadeInImage(
-             // placeholder: MemoryImage(kTransparentImage),
-              //image: NetworkImage(meal.imageUrl),
-              //fit: BoxFit.cover,
-             // height: 200,
-              //width: double.infinity,
-           // ),
-           FadeInImage(
+            FadeInImage(
               placeholder: MemoryImage(kTransparentImage),
               image: NetworkImage(meal.imageUrl),
               fit: BoxFit.cover,
-              imageErrorBuilder: (context, error, stackTrace) {
-                return Container(
-                  color: Colors.black12,
-                  alignment: Alignment.center,
-                  child: const Icon(Icons.broken_image_outlined, size: 36),
-                );
-              },
+              height: 200,
+              width: double.infinity,
             ),
             Positioned(
               bottom: 0,
