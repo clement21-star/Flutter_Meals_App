@@ -13,7 +13,7 @@ const availableCategories = [
   Category(
     id: 'c2',
     title: 'Quick & Easy',
-    color: Colors.red,
+    color: Color.fromARGB(255, 193, 14, 2),
   ),
   Category(
     id: 'c3',
@@ -48,7 +48,7 @@ const availableCategories = [
   Category(
     id: 'c9',
     title: 'French',
-    color: Color.fromARGB(255, 192, 3, 66),
+    color: Color.fromARGB(226, 161, 6, 6),
   ),
   Category(
     id: 'c10',
